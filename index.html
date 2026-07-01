@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Portfolio etudiant de Nabil Chakil : projets web, UI, design graphique, maquettes et interfaces digitales."
+    >
+    <title>Nabil Chakil | Portfolio etudiant Web & Design</title>
+    <link rel="preload" href="assets/portfolio-hero.png" as="image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#accueil" aria-label="Nabil Chakil">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span>Nabil Chakil</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">Ouvrir le menu</span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="#design">Design</a>
+        <a href="#dev">Dev</a>
+        <a href="#services">Competences</a>
+        <a href="#profil">Profil</a>
+        <a class="nav-cta" href="#linkedin">LinkedIn</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="accueil" aria-label="Accueil">
+        <div class="hero-media" aria-hidden="true">
+          <img src="assets/portfolio-hero.png" alt="">
+        </div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Web design &middot; UI &middot; Identite visuelle</p>
+          <h1>Nabil Chakil</h1>
+          <p class="hero-copy">
+            Portfolio d'un etudiant en web et design : maquettes, interfaces, identites visuelles
+            et integrations realisees pour apprendre, tester et progresser.
+          </p>
+          <div class="hero-actions" aria-label="Actions principales">
+            <a class="button button-primary" href="#design">Voir le design</a>
+            <a class="button button-secondary" href="#linkedin">Voir LinkedIn</a>
+          </div>
+          <dl class="hero-stats" aria-label="Chiffres cles">
+            <div>
+              <dt>8</dt>
+              <dd>projets selectionnes</dd>
+            </div>
+            <div>
+              <dt>3</dt>
+              <dd>axes creatifs</dd>
+            </div>
+            <div>
+              <dt>2026</dt>
+              <dd>portfolio etudiant</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section project-section" id="design" aria-label="Design">
+        <div class="section-heading">
+          <p class="eyebrow">Section design</p>
+          <h2>Projets design</h2>
+          <p>
+            Etudes de cas en identite visuelle, logo design, design editorial et UI. Chaque carte
+            ouvre le PDF ou la maquette Figma du projet.
+          </p>
+        </div>
+
+        <div class="project-filters" role="tablist" aria-label="Filtrer les projets design">
+          <button class="filter-button is-active" type="button" role="tab" aria-selected="true" data-filter="all">
+            Tous
+          </button>
+          <button class="filter-button" type="button" role="tab" aria-selected="false" data-filter="branding">
+            Branding
+          </button>
+          <button class="filter-button" type="button" role="tab" aria-selected="false" data-filter="logo">
+            Logo
+          </button>
+          <button class="filter-button" type="button" role="tab" aria-selected="false" data-filter="editorial">
+            Editorial
+          </button>
+          <button class="filter-button" type="button" role="tab" aria-selected="false" data-filter="web">
+            Web
+          </button>
+          <button class="filter-button" type="button" role="tab" aria-selected="false" data-filter="mobile">
+            Mobile
+          </button>
+        </div>
+
+        <div class="project-grid" data-project-grid>
+          <a
+            class="project-card accent-coral"
+            href="assets/pdf/lovasoa.pdf"
+            target="_blank"
+            rel="noopener"
+            data-category="design branding logo"
+            aria-label="Ouvrir le PDF du projet LOVASOA"
+          >
+            <div class="project-thumb project-thumb-brand" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Branding & logo design</p>
+              <h3>LOVASOA</h3>
+              <p>
+                Identite visuelle complete pour une marque fictive de cosmetiques naturels :
+                valeurs, logo, palette, typographies, style photo et mockups packaging.
+              </p>
+              <ul class="tag-list" aria-label="Competences utilisees">
+                <li>Branding</li>
+                <li>Logo</li>
+                <li>Packaging</li>
+              </ul>
+              <span class="project-open">Ouvrir le PDF</span>
+            </div>
+          </a>
+
+          <a
+            class="project-card accent-plum"
+            href="assets/pdf/paon.pdf"
+            target="_blank"
+            rel="noopener"
+            data-category="design branding logo"
+            aria-label="Ouvrir le PDF du projet AURELIS"
+          >
+            <div class="project-thumb project-thumb-campaign" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Luxury branding</p>
+              <h3>AURELIS</h3>
+              <p>
+                Creation d'identite visuelle pour une marque de luxe, avec recherches graphiques,
+                logo inspire du paon, variantes et mockups sur supports premium.
+              </p>
+              <ul class="tag-list" aria-label="Competences utilisees">
+                <li>Logo</li>
+                <li>Luxe</li>
+                <li>Mockups</li>
+              </ul>
+              <span class="project-open">Ouvrir le PDF</span>
+            </div>
+          </a>
+
+          <a
+            class="project-card accent-blue"
+            href="assets/pdf/nevers.pdf"
+            target="_blank"
+            rel="noopener"
+            data-category="design editorial"
+            aria-label="Ouvrir le PDF du projet magazine Nevers"
+          >
+            <div class="project-thumb project-thumb-editorial" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Editorial design</p>
+              <h3>Magazine Nevers</h3>
+              <p>
+                Projet etudiant de magazine touristique sur la ville de Nevers :
+                couverture, doubles pages, hierarchie typographique et direction artistique.
+              </p>
+              <ul class="tag-list" aria-label="Competences utilisees">
+                <li>Magazine</li>
+                <li>Mise en page</li>
+                <li>Tourisme</li>
+              </ul>
+              <span class="project-open">Ouvrir le PDF</span>
+            </div>
+          </a>
+
+          <a
+            class="project-card accent-teal"
+            href="assets/pdf/evasion.pdf"
+            target="_blank"
+            rel="noopener"
+            data-category="design editorial"
+            aria-label="Ouvrir le PDF du projet magazine Evasion Madagascar"
+          >
+            <div class="project-thumb project-thumb-dashboard" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Magazine touristique</p>
+              <h3>Evasion Madagascar</h3>
+              <p>
+                Magazine consacre aux parcs nationaux de Madagascar, avec Isalo, Andasibe,
+                informations touristiques, randonnees, biodiversite et direction artistique.
+              </p>
+              <ul class="tag-list" aria-label="Competences utilisees">
+                <li>Editorial</li>
+                <li>Tourisme</li>
+                <li>Communication</li>
+              </ul>
+              <span class="project-open">Ouvrir le PDF</span>
+            </div>
+          </a>
+
+          <a
+            class="project-card accent-yellow"
+            href="https://www.figma.com/design/nu5qVOcmbKlbxHHDZHNYcq/Untitled?node-id=0-1&amp;t=lV132QjjquTh8c8v-1"
+            target="_blank"
+            rel="noopener"
+            data-category="design web ui"
+            aria-label="Ouvrir la maquette Figma du redesign Andringitra"
+          >
+            <div class="project-thumb project-thumb-shop" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Redesign web</p>
+              <h3>Andringitra</h3>
+              <p>
+                Projet de redesign du site du parc d'Andringitra, avec une approche plus claire
+                pour presenter le parc, ses informations et son univers visuel.
+              </p>
+              <ul class="tag-list" aria-label="Competences utilisees">
+                <li>Web design</li>
+                <li>Redesign</li>
+                <li>Figma</li>
+              </ul>
+              <span class="project-open">Ouvrir Figma</span>
+            </div>
+          </a>
+
+          <a
+            class="project-card accent-ink"
+            href="https://www.figma.com/design/fi4KotGfTFhjIUpMqh6bp4/Untitled?t=lV132QjjquTh8c8v-1"
+            target="_blank"
+            rel="noopener"
+            data-category="design mobile ui"
+            aria-label="Ouvrir la maquette Figma du projet Cinema"
+          >
+            <div class="project-thumb project-thumb-mobile" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Application mobile</p>
+              <h3>Cinema</h3>
+              <p>
+                Creation d'une maquette d'application mobile pour reserver une seance de cinema,
+                avec parcours de reservation et interface pensee pour mobile.
+              </p>
+              <ul class="tag-list" aria-label="Competences utilisees">
+                <li>Mobile UI</li>
+                <li>Reservation</li>
+                <li>Figma</li>
+              </ul>
+              <span class="project-open">Ouvrir Figma</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="section dev-section" id="dev" aria-label="Developpement">
+        <div class="section-heading">
+          <p class="eyebrow">Developpement</p>
+          <h2>Projets dev</h2>
+          <p>
+            Selection de projets developpement realises en cours ou en equipe, entre jeu,
+            web et mobile.
+          </p>
+        </div>
+
+        <div class="dev-grid">
+          <a
+            class="dev-case"
+            href="https://github.com/chakil2004/garage/tree/integration-web-mobile-godot"
+            target="_blank"
+            rel="noopener"
+            aria-label="Ouvrir le depot GitHub du projet Garage connecte"
+          >
+            <div class="dev-case-content">
+              <p class="project-type">Godot & integration web/mobile</p>
+              <h3>Garage connecte</h3>
+              <p>
+                Dans la partie Godot, un personnage gere l'arrivee d'une voiture, lance la
+                reparation puis renvoie le vehicule. Le projet complet prevoit une partie web pour
+                signaler les voitures cassees et identifier les pannes, ainsi qu'une partie mobile
+                pour l'alerte de fin de reparation et le paiement.
+              </p>
+              <ul class="tag-list" aria-label="Competences utilisees">
+                <li>Godot</li>
+                <li>Web</li>
+                <li>Mobile</li>
+                <li>Equipe x3</li>
+              </ul>
+              <span class="project-open">Voir le GitHub</span>
+            </div>
+          </a>
+
+          <a
+            class="dev-case"
+            href="https://github.com/chakil2004/avion"
+            target="_blank"
+            rel="noopener"
+            aria-label="Ouvrir le depot GitHub du projet Avion"
+          >
+            <div class="dev-case-content">
+              <p class="project-type">Gestion de reservations</p>
+              <h3>Reservation de vols</h3>
+              <p>
+                Projet de gestion de reservation de vols, pense pour organiser les informations
+                liees aux trajets, aux vols disponibles et aux reservations effectuees par les
+                utilisateurs.
+              </p>
+              <ul class="tag-list" aria-label="Competences utilisees">
+                <li>Gestion</li>
+                <li>Reservations</li>
+                <li>Vols</li>
+                <li>GitHub</li>
+              </ul>
+              <span class="project-open">Voir le GitHub</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="section services-section" id="services">
+        <div class="section-heading">
+          <p class="eyebrow">Competences</p>
+          <h2>Developpement, UI/UX et identite visuelle</h2>
+          <p>
+            Un profil hybride qui relie code, experience utilisateur et creation graphique.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-item">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <path d="M4 5.5h16v13H4z"></path>
+                <path d="M4 9h16"></path>
+                <path d="M8 13h5"></path>
+                <path d="M8 16h8"></path>
+              </svg>
+            </span>
+            <h3>Developpement web</h3>
+            <p>Applications web, logique metier, interfaces responsives et projets en Java, PHP et React.</p>
+          </article>
+          <article class="service-item">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <path d="M7 3h10v18H7z"></path>
+                <path d="M10 6h4"></path>
+                <path d="M10 18h4"></path>
+              </svg>
+            </span>
+            <h3>UX/UI design</h3>
+            <p>Maquettes Figma, parcours utilisateur, prototypes mobiles et redesigns de sites web.</p>
+          </article>
+          <article class="service-item">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <path d="M12 3 4 7v10l8 4 8-4V7z"></path>
+                <path d="m4 7 8 4 8-4"></path>
+                <path d="M12 11v10"></path>
+              </svg>
+            </span>
+            <h3>Branding & editorial</h3>
+            <p>Logos, chartes graphiques, identites visuelles, magazines et mises en page editoriales.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="profile-section" id="profil">
+        <div class="profile-copy">
+          <p class="eyebrow">Profil</p>
+          <h2>Etudiant en developpement et design a l'IT University de Madagascar.</h2>
+          <p>
+            Je concois des applications web et des interfaces modernes tout en developpant des
+            identites visuelles. A travers mes projets academiques et personnels, je combine
+            developpement, UX/UI et design graphique afin de creer des solutions fonctionnelles,
+            intuitives et esthetiques.
+          </p>
+        </div>
+        <div class="timeline" aria-label="Parcours">
+          <div>
+            <span>2026</span>
+            <p>Developpement d'applications web completes, integration d'un projet Web, Mobile et Godot, ainsi que creation de portfolios interactifs.</p>
+          </div>
+          <div>
+            <span>2025</span>
+            <p>Realisation de projets de developpement web en Java, PHP et React, conception d'interfaces UI/UX sur Figma et creation d'identites visuelles.</p>
+          </div>
+          <div>
+            <span>2024</span>
+            <p>Premiers projets en design graphique et design editorial : logos, chartes graphiques, magazines et prototypes interactifs.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="linkedin">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>LinkedIn et email</h2>
+          <p>
+            Consultez mon profil LinkedIn ou envoyez-moi directement un email pour un stage,
+            une alternance ou une collaboration.
+          </p>
+        </div>
+        <div class="contact-actions" aria-label="Liens de contact">
+          <a class="contact-link" href="https://www.linkedin.com/in/nabil-chakil" target="_blank" rel="noopener">
+            <span>linkedin.com/in/nabil-chakil</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m13 6 6 6-6 6"></path>
+            </svg>
+          </a>
+          <a class="contact-link contact-link-secondary" href="mailto:nabilchakil@gmail.com">
+            <span>nabilchakil@gmail.com</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m13 6 6 6-6 6"></path>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span data-year></span> Nabil Chakil. Portfolio etudiant web & design.</p>
+      <a href="#accueil">Retour en haut</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
